@@ -1,0 +1,797 @@
+/**
+*	Style for country
+*	
+*	@date			December 19, 2024
+*	@version 		1.0
+*	@autor			Sanjay Paul
+*	@copyright		Analyze System
+*	@email			developer@ansysoft.com
+*/
+/* Top Banner */
+.country-banner {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.24);
+  z-index: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* activity banner text  */
+.text-overlay-activity {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text-overlay-activity h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  line-height: 6.875rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+/* eof activity banner text  */
+.text-overlay h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  line-height: 6.875rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 4rem;
+  
+}
+.h1-part1,
+.h1-part2 {
+  display: block;
+}
+
+.h1-part2 {
+  margin-top: .75rem;
+  font-size: 7rem; /* or whatever space you want */
+}
+
+
+.line-divider {
+  width: 55rem;
+  height: 2px;
+  background-color: white;
+  margin-top: 1rem;
+}
+.line-divider-activity {
+  width: 64rem;
+  height: 2px;
+  background-color: white;
+  margin-top: 1rem;
+}
+.description-inner {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+.country-book-package-button-banner a {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  width: 12.5rem;
+  height: 3rem;
+  border-radius: 3.125rem;
+  background-color: #FC6B21;
+  border: 2px solid #FC6B21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-book-package-button-banner a:hover {
+  background-color: #ffffff;
+  border: 2px solid #FC6B21;
+  color: #FC6B21;
+  transition: all 0.4s ease;
+}
+
+.country-center-propagation {
+  width: 100%;
+  height: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.country-center-propagation {
+  position: absolute;
+  /* makes it float over banner */
+  top: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.country-mouse-image-section {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 6.25rem;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-image {
+  top: 1rem;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc; /* Optional: fallback border */
+}
+
+.paragraph p {
+  left: 10%;
+}
+
+.location-image img {
+  top: 2%;
+}
+
+/*Bread Crumb*/
+.bread-crumb-country {
+  margin-top: 10%;
+  margin-left: 10%;
+  color: #858585;
+  font-size: 0.78rem;
+}
+
+.bread-crumb-country a {
+  color: #fb6b20;
+  text-decoration: none;
+}
+
+.bread-crumb-country a:hover {
+  text-decoration: underline;
+}
+
+/* Description */
+.description-container {
+  display: flex;
+  margin: 5% 10%;
+}
+
+.description-container img {
+  border-radius: 1rem;
+}
+
+.inner-description {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.description-heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+}
+
+.description-content {
+  font-size: 0.82rem;
+  max-height: 6.3rem;
+  overflow: hidden;
+  line-height: 1.5rem;
+  color: #7e7e7e;
+}
+
+.description-content.expanded {
+  max-height: none;
+}
+
+.description-container span {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.read-more {
+  color: #fb6b20;
+}
+
+/* Section Jump Navbar */
+.section-anchor {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 0.5rem;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+.section-anchor a {
+  text-decoration: none;
+  color: #000025;
+  padding: 0.7rem 1.3rem;
+  display: flex;
+  text-align: center;
+  margin: 0 1px;
+}
+
+.section-anchor a:hover {
+  background-color: #f26c3d;
+  color: #fff;
+}
+
+.section-anchor .active {
+  background-color: #f26c3d;
+  color: #fff;
+}
+
+/* Pages */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  /* Space between boxes */
+  justify-content: center;
+  /* Center the boxes */
+  padding: 20px;
+  /* Optional padding */
+}
+
+/* Card */
+.box {
+  position: relative;
+  flex: 1;
+  /* 3 boxes per row */
+  min-width: 21.5rem;
+  /* Minimum width for responsiveness */
+  min-height: 25.98rem;
+  max-width: 300px;
+  /* Optional: Set a max width */
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.card {
+  width: auto;
+  height: 12.5rem;
+  margin: 0.8rem;
+  
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 0 0.8rem 1.3rem 0.8rem;
+}
+
+.card-content h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+  padding-left: 0.2rem;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 95%;
+}
+
+.card-content h3 a {
+  text-decoration: none;
+  color: 000;
+}
+
+.card-content .info {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.num-days-info,
+.price-info,
+.includes-info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  border-radius: .4rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  min-width: 3.2rem;
+}
+
+.num-days-info {
+  width: 22%;
+}
+
+.price-info {
+  width: 34%;
+}
+
+.includes-info {
+  width: 40%;
+}
+
+.num-days-info h4.title,
+.price-info h4.title,
+.includes-info h4.title {
+  font-size: .7rem;
+  letter-spacing: 5%;
+  font-weight: 300;
+  color: #9ea6b0;
+}
+
+.num-days-info .info-detail,
+.price-info .info-detail {
+  font-size: .825rem;
+  font-weight: 400;
+  color: #3E4145;
+}
+
+.includes-info .common-includes-icons {
+  gap: .7rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.includes-info .common-includes-icons img {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+}
+
+/* Cart Footer */
+.card-footer {
+  width: 90%;
+  background-color: #F2F2F9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding: 1.45rem 5%;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.footer-info {
+  display: flex;
+  margin-left: 4rem;
+  flex-direction: row;
+}
+.card-footer .footer-buttons {
+  margin-left: 7%;
+  margin-right: 3%;
+}
+
+.card-footer a.details {
+  display: flex;
+  flex-direction: row;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border: 1px solid #ff5722;
+  border-radius: 4px;
+  padding: 9px 13px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.card-footer a.details:hover {
+  border: 1px solid #ff5722;
+  background: #fff;
+  color: #ff5722;
+}
+
+.card-footer a.enquire {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #286C26;
+  background-color: #286C26;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.card-footer a.enquire:hover {
+  border: 1px solid #286C26;
+  background-color: #fff;
+  color: #286C26;
+}
+
+.card-footer a.share {
+  color: #35633d;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.card-footer a.share:hover {
+  text-decoration: underline;
+}
+
+a.share {
+  margin-left: 0.9rem;
+}
+
+a.share img {
+  margin-right: 0.2rem;
+}
+
+/* Mid Banner */
+
+/*Mid Section*/
+.mid-section {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  margin: 3rem 10%;
+  height: 25rem;
+  width: 80%;
+  border-radius: 1rem;
+  background-color: #ff5722;
+}
+
+.mid-content {
+  height: 25rem;
+  width: 60%;
+}
+
+.mid-section .mid-banner {
+  width: 60%;
+  height: 103%;
+  border-radius: 14rem 1rem 1rem 14rem;
+  margin-top: -0.7rem;
+  overflow: hidden;
+}
+
+.overflow-container {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #ff5722;
+  /* border-radius: 1rem 10rem 12rem 1rem; */
+}
+
+.overflow-container h2 {
+  color: white;
+  font-size: 2.2rem;
+  font-family: 'Nunito', sans-serif;
+  margin: 4rem 2.5rem 0.5rem 2.5rem;
+  padding: 0 1rem;
+}
+
+.overflow-container p {
+  font: 500 1.1rem/1.8rem 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 0rem 2.5rem 0rem 2.5rem;
+  padding: 0 1rem;
+}
+
+.button-container {
+  margin: 1.25rem 1.25rem 1.25rem 2.75rem;
+  /* Adjust margin if needed */
+}
+
+.view-details-button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.view-details-button span {
+  margin-right: 0.2rem;
+  font-weight: 400;
+}
+
+.view-details-arrow {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(-45deg);
+}
+
+/* wave container */
+.view-details-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: #2c2c2c;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-left: 0.7rem;
+}
+
+/* Place Info Heading */
+.place-info-heading {
+  margin: 1.5rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Others Cart  */
+.place-info-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  max-width: 80rem;
+  /* margin: 2rem 5rem 2rem 13rem; */
+  margin: 0px auto;
+
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+/* .place-info {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  aspect-ratio:6/7;	
+  margin: 1rem 0;
+}
+.place-info img {
+  width: 100%;
+  aspect-ratio:6/7;
+  display: block;
+}
+.place-info .overlay {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 0.938rem;
+ 
+  right: 1.89rem;
+  left: 0.940rem;
+
+  color: white;
+  
+  font-size: 1.1rem;
+  font-weight: 600;
+} */
+.place-info {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  aspect-ratio: 6 / 7;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.place-info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  border-radius: 1.5rem;
+}
+
+.place-info .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 40%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  /* Align text to bottom */
+  border-radius: 1.5rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  /* Banner container adjustments */
+  .country-banner {
+    height: auto;
+  }
+
+  .banner-content {
+    display: block;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .banner-overlay {
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  /* Text alignment and spacing */
+  .text-overlay {
+    position: relative;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    transform: none;
+    top: auto;
+    left: auto;
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  .text-overlay h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .text-overlay .h1-part2 {
+    font-size: 2.5rem;
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .line-divider {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 1rem 0;
+  }
+
+ 
+  .description-inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    background: none;
+    padding-top: 1rem;
+  }
+
+  .location-image {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .location-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .paragraph p {
+    margin: 0;
+  }
+
+  /* Book Button */
+  .country-book-package-button-banner a {
+    margin: 0 0 3rem 0;
+    font-size: 0.9rem;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    display: inline-flex;
+    z-index: 1;
+  }
+
+  /* Mouse scroll icon */
+  .country-center-propagation {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+  }
+
+  .country-mouse-image-section {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .country-mouse-image-section img {
+    width: 60%;
+    height: auto;
+    
+  }
+
+  /* Welcome section spacing fix */
+  main {
+    position: relative;
+    z-index: 1;
+   
+  }
+}
+

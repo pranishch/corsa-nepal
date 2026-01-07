@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/** Heading*/
+.banner-h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 6.25rem;
+    line-height: 6.875rem;
+    color: white;
+    text-transform: uppercase;
+}
+h1.inner-heading {
+    font:500 2.5rem 'Oswald', sans-serif;
+	margin: 1rem 0;
+    text-align: center;
+	text-transform: uppercase;
+}
+h2 {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    line-height: 2.5rem;
+	text-transform: uppercase;
+}
+h2.inner-sub-heading {
+    text-transform: none;
+}
+h2.serif-sub-heading {
+    text-transform: none;
+}
+
+h2.review-title{
+	width: 100%;
+	text-align: center;
+}
+h2.adventure-sports-heading {
+	color: #fff;
+	text-transform: none;
+	margin: 3rem auto;
+}
+h2.long, h2.long a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1%;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Floating Social Icons */
+.floating-social {
+    position: fixed;
+    right: 1.25rem;
+    top: 90%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.floating-social .social-icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.floating-social .social-icon:hover {
+    transform: scale(1.2) translateY(-2px);
+    opacity: 1;
+}
+
+/* Specific icon styles */
+.floating-social .facebook-icon {
+    background-image: url('../images/icon/WhatsAppConnect.svg');
+}
+
+
+.hot-selling-packages-title {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* HOT SELLING PACKAGES SECTION  */
+.hot-selling-packages-title .small-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 15%;
+    margin-bottom: 0.625rem;
+	color: #FC6B21;
+}
+.hot-selling-packages-title h2{
+	font-size: 2.1rem;
+}
+/*Package*/
+
+.packages-list {
+    width: 80%;
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.top-selling-package {
+    width: 13.5rem;
+    height: 15.625rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.top-selling-package img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(0, 0, 0, 0.24);
+}
+
+
+.top-selling-package:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.package-text {
+    background: rgba(0, 0, 0, 0.24);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0.938rem;
+    left: 0.938rem;
+    right: 1.25rem;
+    color: white;
+}
+/* eof  HOT SELLING PACKAGES SECTION  */
+
+/* kathmandu-in-1-day  */
+.kathmandu-one-day {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 80rem;
+    
+    margin: 5% auto 0;
+    padding-bottom: 5%;
+    background-image: url("../images/back/kathmandu_line.jpg");
+}
+
+.kathmandu-one-day-brief {
+    width: 30%;
+    /* padding-top: 2%; */
+}
+
+.kathmandu-one-day-images {
+    width: 45%;
+    /* background-color: rgba(0, 0, 0, 0.13); */
+}
+
+.kathmandu-one-day-brief .small-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.875rem;
+    text-transform: none;
+    font-weight: 100;
+	color: #FC6B21;
+}
+
+.kathmandu-one-day-brief p {
+    margin-top: 8%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #63686B;
+}
+
+.kathmandu-one-day-images {
+    padding-left: 2%;
+    gap: 1.25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.one-day-featured-image {
+    width: 18.75rem;
+    height: 25rem;
+    background-color: antiquewhite;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: block;
+}
+
+.one-day-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.one-day-featured-image img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.one-day-other-images {
+    width: 15.625rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    display: block;
+    overflow: hidden;
+}
+
+.one-day-other-images img {
+    width: 100%;
+    height: 12.2rem;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.one-day-other-images img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* eof kathmandu in one day  */
+/* adventure sports  */
+.popular-adventure-sports-section {
+    width: 100%;
+    height: auto;
+    background-image: url("../images/back/adventure-sports-section-backgroung.jpg");
+    /* display: block; */
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.188rem;
+    color: #ffff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+
+.adventure-sports-card {
+    width: 78%;
+    height: auto;
+    /* background-color: rgba(240, 248, 255, 0.13); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.sports-content-box {
+    width: 20rem;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 1.375rem;
+    margin-bottom: 8%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sports-content-box:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sports-type-image {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    /* Prevents image from overflowing the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sports-type-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.adventure-sports-text-area {
+    padding: 8% 4% 12% 6%;
+
+}
+
+.sports-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.375rem;
+    color: #24242D;
+    font-weight: 600;
+}
+
+.adventure-sports-text-area p {
+    margin-top: 3%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #444D53;
+    margin-bottom: 10%;
+}
+
+.adventure-sports-text-area a.explore-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+    padding: 3% 7%;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #FC6B21;
+    font-weight: 600;
+    border: 2px solid #FC6B21;
+    border-radius: 3.125rem;
+}
+
+.adventure-sports-text-area a.explore-button:hover {
+    background-color: #faceb8;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+
+.adventure-sports-text-area a.explore-button:hover {
+    background-color: #faceb8;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+
+/* eof adventure sports  */
+
+.image-gallery-title {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery-title .small-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.875rem;
+    text-transform: none;
+    font-weight: 100;
+	color: #FC6B21;
+}
+
+.image-gallery-title h2 {
+    font-size: 50px;
+}
+
+.image-gallery-section {
+    /* width: 100%; */
+    height: auto;
+    padding: 0 20% 8% 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.938rem;
+}
+
+.image-gallery-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.media-featured {
+    width: 47%;
+    max-width: 480px;
+	aspect-ratio:1/1;
+    border-radius: 1.25rem;
+	overflow: hidden;
+}
+	.media-featured .video-container {
+            width: 100%;
+            /* padding-bottom: 56.25%; Maintain 16:9 aspect ratio */
+            height: 100%;
+            overflow: hidden;
+            border-radius: 1.25rem;  /*Add rounded corners */
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Optional shadow for aesthetics */
+        }
+	 .media-featured .video-container iframe {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+            border-radius: 1rem; /* Ensure rounded corners apply to the iframe */
+        }
+
+.image-gallery-four-small-image {
+    width: 50%;
+    height: 30rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+
+}
+
+.image-gallery-small-two-image {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.938rem;
+}
+
+.gallery-small-image {
+    width: 47%;
+    height: 100%;
+    border-radius: 0.938rem;
+}
+
+.gallery-small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* -------------- */
+
+.gallery-small-image iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.938rem;
+}
+
+/*Review*/
+.customer-review {
+	background: url("../images/back/review-section-back.jpg") no-repeat  bottom;
+	background-size: 100% auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.review-detail {
+	background: url("../images/inverted-comma.png") no-repeat top left;
+	margin-top: 2rem;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 7rem;
+}
+.review-text {
+	font-family: 'IBM Plex Serif', serif;
+}
+.review-text p {
+    font-size: 1.5rem;
+    font-weight: 200;
+	font-style: italic;
+	margin-bottom: 1.5rem;
+}
+.review-person-name {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-top: 7%;
+    display: flex;
+    justify-content: right;
+}
+
+
+.footer-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 2.5rem;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 0.063rem;
+    background-color: #E8EBEE;
+}
+
+.res-show {
+    display: none;
+}
+
+/* TripAdvisor Award Section */
+
+.trip-advisor {
+    width: 100%;
+    margin: 5% auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: #397644;
+    padding: 2rem 0;
+}
+
+    .award-section {
+        width: 70%;
+        max-width: 1200px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6rem;
+        flex-wrap: wrap;
+    }
+
+/* Image on the left */
+.award {
+    flex: 1;
+    text-align: center;
+}
+    .award img {
+        max-width: 100%;
+        border-radius: 1.25rem;
+    }
+    /* .award p {        
+        font: 500 1rem 'Poppins', sans-serif;
+        margin: 2% 0 0 0;
+        color: #fff;
+    } */
+
+/* Description on the right */
+.award-description .small-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.875rem;
+    text-transform: none;
+    font-weight: 100;
+    color: #fff;
+}
+
+.award-description {
+    flex: 2;
+    color: #fff;
+}
+    .award-description .long{
+        color: #fff;
+    }
+    .award-description p {
+        font-size: 1rem;
+        margin: 8% 0 0 0;
+    }
+
+

@@ -1,0 +1,247 @@
+/*Banner*/
+.inner-banner{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.inner-banner-image{
+    width: 100%;
+    aspect-ratio: 23/7;
+    object-fit: cover;
+}
+
+.about-us-banner{
+    aspect-ratio: 21/5;
+}
+
+/*Bread Crumb*/
+.bread-crumb {
+    margin-top: 1.5rem;
+    margin-left: 10%;
+    color: #858585;
+    font-size: 0.78rem;
+}
+.bread-crumb a {
+    color: #fb6b20;
+    text-decoration: none;
+}
+.bread-crumb a:hover {
+    text-decoration: underline;
+}
+
+.highlight-heading{
+  text-transform: lowercase;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #FC6B21;
+  text-align: center;
+  margin: 0;
+}
+
+/* For Horizontal Line */
+.description-line{
+    width: 16%;
+    margin: 2% 42%;
+    border:2px solid #397644;
+}
+.grey-horizontal-line{
+    width: 90%;
+    margin: 1% 0;
+    border-top:1px solid #f1f1f1;
+}
+.description-brife{
+    color: #63686B;
+    font-size: 1rem;
+}
+
+/* For Main Banner */
+.main-banner{
+    width: 100%;
+    margin: 1rem 0;
+}
+.main-banner-image{
+    width: 100%;
+    aspect-ratio: 23/7;
+    object-fit: cover;
+}
+
+/* For Heading */
+.page-headeing{
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.page-container{
+    margin: 1.5rem 15%;
+}
+.page-content{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #63686B;
+}
+.contact_us-banner {
+    width: 100%;
+    aspect-ratio: 23 / 7;
+    object-fit: cover;
+}
+.contact_us-banner img{
+    width: 100%;
+    aspect-ratio: 23 / 7;
+    object-fit: cover;
+}
+
+/** Ticketing **/
+.ticketing-banner{
+    aspect-ratio: 21/5;
+}
+
+.ticket-description-content {
+    width: 80%;
+    margin: 0 10%;
+}
+    .ticket-description-content p {
+        margin-bottom: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: #63686B;
+    }
+
+
+.flight-text-section {
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f7f9fc 0%, #e0f0ff 100%);
+    padding: 2rem 0;
+    gap: 2rem; 
+}
+    .flight-text {
+        width: 55%;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+        .flight-text-section .subheading {
+        display: block;
+        font: normal 0.9rem "Inria Serif", serif;
+        font-style: italic;
+        color: #63686B;
+        margin-top: 0.3rem;
+        }
+        .flight-text-section h2 {    
+            font: 600 2rem "Poppins", sans-serif;
+            width: calc(52% - 30px);
+            margin: 0;
+            text-transform: capitalize;
+        }
+        .flight-text-section p {
+            width: calc(48% - 30px);
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #63686B;
+            line-height: 1.6rem;
+        }
+
+.flightBanner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+    .flight-image {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+
+        .flight-midBanner {
+        width: calc(33.333% - 1rem); 
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .flight-midBanner:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .flight-midBanner img {
+        width: 100%;
+        display: block;
+        border-radius: 0.5rem;
+        }
+
+
+/* Modal Viewer Styles */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px #000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-prev,
+.modal-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
+  padding: 0 1rem;
+}
+
+.modal-prev {
+  left: 10px;
+}
+
+.modal-next {
+  right: 10px;
+}
+
+/** eof Ticketing **/

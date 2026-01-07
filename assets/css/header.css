@@ -1,0 +1,499 @@
+#header-notification-contect-box {
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #397644;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 42%; */
+}
+
+.header-notification-content {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    margin: 1% 0 1% 5%;
+    /* background-color: #bd1a14; */
+}
+
+.header-notification-content p {
+    color: #AEFDBC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+}
+
+.whatsapp-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    /* margin-left: 3%; */
+    margin: 0 5% 0 0;
+}
+
+.whatsapp-contact-number a {
+    text-decoration: none;
+}
+
+.book-now-option {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem;
+    /* padding-left: 0.625rem; */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-left: .5rem;
+}
+
+.header-notification-content img {
+    margin-left: 48%;
+    padding-right: 1%;
+}
+
+.whatsapp-contact a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    
+}
+
+.whatsapp-contact a {
+    color: white;
+}
+
+.navbar-content-box {
+
+    padding: 0.5% 4% 0.5% 4%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-bottom: 2%; */
+    /* background-color: beige; */
+}
+
+.nav-options {
+    display: flex;
+    gap: 4%;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    width: 50%;
+    padding-left: 4%;
+}
+
+.nav-options .dropdown::after {
+    content: '\25BC';
+    /* Unicode for a down arrow */
+    font-size: 0.8em;
+    margin-left: 0.313rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: black;
+}
+
+.tripadvisor-logo {
+    margin-left: 18%;
+}
+
+.set-plan-button {
+    width: 10rem;
+    height: auto;
+    /* background-color: orange; */
+    margin-left: 4%;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    padding: 1% 0 1% 0;
+    border: 2px solid #FC6B21;
+    border-radius: 30px;
+    color: #FC6B21;
+    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.set-plan-button:hover {
+    background-color: #FC6B21;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+
+}
+
+
+
+
+/* ---------------------------------------  */
+
+#menu-icon {
+    background: url("../images/icons/menu.png") center center no-repeat;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+#mobile-nav {
+    background: #fff;
+    width: 100%;
+    margin: 0px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    display: none;
+    z-index: 999;
+    border-top: 1px solid #CACACA;
+}
+
+#mobile-nav ul li {
+    width: calc(100% - 60px);
+    min-height: 2.5rem;
+    padding: 0.625rem 1.25rem;
+    display: table;
+    border-bottom: 1px solid #CACACA;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#mobile-nav ul li {
+    /*				font: normal 0.875rem "Josefin Sans", "Poppins", "sans-serif";*/
+    font-weight: 500;
+    /*				color: #2C3241;*/
+    text-transform: uppercase;
+    letter-spacing: .03125rem;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3% 2% 3% 2%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.trip-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .55);
+    z-index: 9999;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.trip-modal-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.trip-modal-image {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.trip-modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.trip-modal-content {
+    position: relative;
+    width: 100%;
+    padding: 1.2rem;
+    box-sizing: border-box;
+}
+
+.trip-modal-content h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.trip-modal-content form {
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.button-wrapper button {
+    width: 10rem;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border: none;
+    background: orangered;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.button-wrapper button:hover {
+    background: #fff;
+    color: orangered;
+    border: 1px solid orangered;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Add to your existing CSS */
+.formInvalid {
+    border: 1px solid #f0988e !important;
+}
+
+.formInvalid::placeholder {
+    color: #f0988e !important;
+    opacity: 1 !important;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: initial !important;
+}
+
+
+/* activity dropdown  */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    
+    /* width: 70%; */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 1rem;
+  width: 30rem;
+  z-index: 5;
+  justify-content: space-between;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    /* margin-left: 10px; */
+   
+}
+.dropdown-content-bg{
+    display: flex;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: row;
+    
+}
+.dropdown-content-main{
+    background: white;
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    margin-top:0.8rem;
+    padding: 2rem;
+    font-size: .85rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+    border-radius:33px ;
+}
+.dropdown-content1, .dropdown-content2{
+    width: 50%;
+}
+.dropdown-content1 a:hover,
+.dropdown-content2 a:hover {
+    color: #FC6B21;
+    text-decoration: none;
+    background: none;
+    /* border: none; */
+     margin-left: 0;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2980b9;
+}
+.dropdown::after,
+.dropdown a::after {
+  content: none !important;
+}
+.dropdown-icon {
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+/* eof activity dropdown  */
+@media screen and (min-width: 768px) {
+    .trip-modal-container {
+        flex-direction: row;
+    }
+
+    .trip-modal-image {
+        width: 50%;
+        height: auto;
+    }
+
+    .trip-modal-content {
+        width: 50%;
+        padding: 2rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #header-notification-contect-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        /* Reduce from 41% */
+        padding: 1rem;
+    }
+
+    .header-notification-content {
+        flex-direction: column;
+        margin: 0;
+        padding : 0.2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-notification-content img {
+        margin-left: 0;
+        padding: 0;
+        width: 2rem;
+        /* Optional: scale image down */
+    }
+
+    .whatsapp-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        
+    }
+
+    .whatsapp-contact-number p {
+        font-size: 1rem;
+        /* Optional: scale down */
+    }
+
+    .book-now-option {
+        padding-left: 0;
+        font-size: 0.875rem;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:767px) {    
+	.trip-modal-container {
+		max-width: 100%;
+		margin: 0px auto;
+		transform: none;
+	}
+		.trip-modal-content {
+			width: 100%;
+			height: 100%;
+		}
+		.trip-modal-image {
+			display: none;
+		}
+}
+
+@media screen and (min-width: 768px) {
+    .trip-modal-container {
+        flex-direction: row;
+        max-width: 900px;
+    }
+
+    .trip-modal-image {
+        width: 50%;
+        height: auto;
+    }
+
+    .trip-modal-content {
+        width: 50%;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+    }
+}
+
+
+/* Modal container (fixed on top of page) */
