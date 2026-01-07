@@ -1,5 +1,3 @@
-// Main.js - Combined JavaScript for Corsa Nepal Adventure
-
 // ==========================================
 // GOOGLE ANALYTICS
 // ==========================================
@@ -8,18 +6,15 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-T0G7QFQJRE');
 
-// ==========================================
-// ALL DOM-INIT IN ONE PLACE (recommended)
-// ==========================================
+
 document.addEventListener("DOMContentLoaded", function () {
-    // --------------------------
+    // ============================
     // PLAN TRIP MODAL
-    // --------------------------
+    // ============================
     const planModal = document.getElementById("planTripModal");
     const planForm = document.getElementById("planTripForm");
 
     if (planModal) {
-        // Open modal from book-my-escape-item
         const openButtons = document.getElementsByClassName("book-my-escape-item");
         for (let i = 0; i < openButtons.length; i++) {
             openButtons[i].addEventListener("click", function () {
@@ -27,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
-        // Close button (generic .close-btn inside modal)
         const planCloseButton = planModal.querySelector(".close-btn") || document.getElementsByClassName("close-btn")[0];
         if (planCloseButton) {
             planCloseButton.addEventListener("click", function () {
@@ -36,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
-        // Handle form submission
         if (planForm) {
             planForm.addEventListener("submit", function (e) {
                 e.preventDefault();
@@ -62,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // --------------------------
-    // SET PLAN BUTTONS (uses same plan modal)
-    // --------------------------
+    // ============================
+    // SET PLAN BUTTONS 
+    // ============================
     if (planModal) {
         document.querySelectorAll('.set-plan-button, .set-plan-button-mobile').forEach(btn => {
             btn.addEventListener('click', function (e) {
@@ -74,9 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --------------------------
-    // LINKS WITH HREF #planTripModal (delegated)
-    // --------------------------
+    // ============================
+    // LINKS WITH HREF #planTripModal 
+    // ============================
     document.body.addEventListener("click", function (e) {
         const target = e.target.closest("a[href='#planTripModal']");
         if (target) {
@@ -85,9 +78,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // --------------------------
-    // OPEN MODAL LINK (explicit trigger)
-    // --------------------------
+    // ============================
+    // OPEN MODAL LINK 
+    // ============================
     const modalTrigger = document.querySelector('.open-modal-link');
     if (modalTrigger && planModal) {
         const closeBtn = planModal.querySelector('.close-btn');
@@ -104,9 +97,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // --------------------------
+    // ============================
     // DROPDOWN MENU
-    // --------------------------
+    // ============================
     const dropdown = document.getElementById('dropdown');
     const dropdownContent = document.getElementById('dropdown-content');
     let hideTimer;
@@ -125,9 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Dropdown elements not found in DOM.");
     }
 
-    // --------------------------
-    // MOBILE NAVIGATION - JQUERY (kept as original)
-    // --------------------------
+    // ============================
+    // MOBILE NAVIGATION - JQUERY
+    // ============================
     if (window.jQuery) {
         $(function () {
             $("#mobile-nav").hide();
@@ -144,9 +137,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --------------------------
+    // ============================
     // LIGHTBOX FOR CERTIFICATES
-    // --------------------------
+    // ============================
     const certificateImgs = document.querySelectorAll(".certificate img");
     const lightbox = document.getElementById("lightbox");
 
@@ -215,9 +208,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --------------------------
-    // FLIGHT MID-BANNER IMAGE MODAL (your provided code, names scoped to avoid conflicts)
-    // --------------------------
+    // =======================================
+    // FLIGHT MID-BANNER IMAGE MODAL
+    // =======================================
     const flightImgsNode = document.querySelectorAll(".flight-midBanner img");
     if (flightImgsNode.length) {
         const flightImages = Array.from(flightImgsNode).map(img => img); // keep original <img> nodes
@@ -245,22 +238,18 @@ document.addEventListener("DOMContentLoaded", function () {
             if (modalImg) modalImg.src = flightImages[flightCurrentIndex].src;
         }
 
-        // Expose functions globally so inline HTML onclick works
         window.closeModal = closeFlightModal;
         window.changeImage = changeFlightImage;
 
-        // Attach click events to images
         flightImages.forEach((img, index) => {
             img.addEventListener("click", () => openFlightModal(index));
         });
 
-        // Optional: prev/next buttons (IDs: modalPrev, modalNext)
         const flightPrevBtn = document.getElementById("modalPrev");
         const flightNextBtn = document.getElementById("modalNext");
         if (flightPrevBtn) flightPrevBtn.addEventListener("click", (e) => { e.stopPropagation(); changeFlightImage(-1); });
         if (flightNextBtn) flightNextBtn.addEventListener("click", (e) => { e.stopPropagation(); changeFlightImage(1); });
 
-        // keyboard navigation for flight modal
         document.addEventListener("keydown", (e) => {
             const imageModal = document.getElementById("imageModal");
             if (imageModal && imageModal.style.display === "block") {
@@ -271,33 +260,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --------------------------
-    // GLOBAL window click handler to close modals when clicking on modal background
+    // ============================
     // (handles planTripModal, lightbox, imageModal)
-    // --------------------------
+    // ============================
     window.addEventListener("click", function (e) {
-        // plan modal background
         if (planModal && e.target === planModal) {
             if (planForm) planForm.reset();
             planModal.style.display = "none";
         }
 
-        // certificate lightbox background
         const lb = document.getElementById("lightbox");
         if (lb && e.target === lb) {
             lb.style.display = "none";
         }
 
-        // flight image modal background
         const imgModal = document.getElementById("imageModal");
         if (imgModal && e.target === imgModal) {
             imgModal.style.display = "none";
         }
     });
 
-    // ------------------------------------------
+    // ======================================
     // READ MORE / READ LESS TOGGLE
-    // ------------------------------------------
+    // ======================================
     const readMoreBtn = document.getElementById('readMore');
     const desc = document.getElementById('description');
 
@@ -309,6 +294,4 @@ document.addEventListener("DOMContentLoaded", function () {
                 : 'Read More >>';
         });
     }
-
-
-}); // end DOMContentLoaded
+}); 
