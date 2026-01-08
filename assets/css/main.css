@@ -2358,6 +2358,29 @@ textarea:focus {
     width: 1.5rem;
     aspect-ratio: 1/1;
 }
+.common-includes-icons i {
+    font-size: 21px;  
+    margin-right: 0.5rem;
+}
+
+.common-includes-icons .icon-meal {
+    color: #F19E39; 
+    font-size: 19px;
+    margin-bottom: 2px;  
+}
+.common-includes-icons .icon-van {
+    color: #811298; 
+}
+
+.common-includes-icons .icon-car {
+    color: #1E90FF;
+}
+
+.common-includes-icons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
 
 /* Cart Footer */
 .card-footer {
@@ -2432,7 +2455,10 @@ textarea:focus {
 .card-footer a.share:hover {
     text-decoration: underline;
 }
-
+.card-footer .Share i.fa-whatsapp {
+    color: #25D366;   /* official WhatsApp green */
+    font-size: 20px; /* adjust size as needed */
+}
 a.share {
     margin-left: 0.9rem;
 }
