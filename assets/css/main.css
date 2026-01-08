@@ -85,23 +85,23 @@ h2.long a {
 }
 
 .floating-social .social-icon {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 3rem;
     height: 3rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    border-radius: 50%;           
+    background-color: #2AA81A; 
+    color: #fff;                
+    font-size: 27px;           
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .floating-social .social-icon:hover {
     transform: scale(1.2) translateY(-2px);
     opacity: 1;
-}
-
-.floating-social .facebook-icon {
-    background-image: url('../images/icon/WhatsAppConnect.svg');
 }
 
 .hot-selling-packages-title {
@@ -878,6 +878,11 @@ h2.long a {
     flex-direction: row;
     gap: 1.25rem;
     margin: 0 5% 0 0;
+}
+
+.whatsapp-contact i {
+    color: #ffffff;
+    font-size: 32px;
 }
 
 .whatsapp-contact-number a {
@@ -1700,6 +1705,10 @@ textarea:focus {
     .responsible {
         padding: 1.5rem 0;
         height: auto;
+    }
+    .whatsapp-contact i {
+        font-size: 24px;
+        margin-bottom: 0.25rem;
     }
 }
 
@@ -3483,6 +3492,15 @@ h2.package-sub-title {
     column-gap: .825rem;
     flex-flow: row;
 }
+.duration i {
+    color: #FC6B21;
+    font-size: 23px;
+}
+.package-note .package-price i {
+    color: #FC6B21;   
+    font-size: 23px;   
+    transform: rotate(90deg);
+}
 
 .package-note a {
     color: #00B8E1;
@@ -3551,20 +3569,28 @@ ul.pack-excludes {
     padding: 0;
 }
 
-ul.pack-includes li {
-    background: url("../images/icon/include-icon.svg") no-repeat left;
+ul.pack-includes li,
+ul.pack-excludes li {
+    position: relative;       
     line-height: 1.5rem;
-    vertical-align: middle;
     margin-bottom: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 2.5rem;    
 }
 
-ul.pack-excludes li {
-    background: url("../images/icon/exclude-icon.svg") no-repeat left;
-    line-height: 1.5rem;
-    vertical-align: middle;
-    margin-bottom: 1rem;
-    padding-left: 2.5rem;
+.pack-includes li i,
+.pack-excludes li i {
+    position: absolute;     
+    left: 0;                  
+    top: 50%;                
+    transform: translateY(-50%);
+    font-size: 1.5rem;        
+}
+.pack-includes li i {
+    color: #349656; 
+}
+
+.pack-excludes li i {
+    color: #FF3B3B; 
 }
 
 /* Right Sidebar */
@@ -5011,12 +5037,15 @@ a.view-details:hover {
         height: 100%;
     }
 
-    .whatsapp-contact img {
+    /* .whatsapp-contact img {
         width: 13%;
         aspect-ratio: 11/10;
         object-fit: cover;
+    } */
+    .whatsapp-contact i {
+        font-size: 17px;
+        margin-bottom: 0.25rem;
     }
-
     .nav-options {
         gap: 2.5%;
         font-size: 0.9rem;
@@ -5154,12 +5183,15 @@ a.view-details:hover {
         height: 100%;
     }
 
-    .whatsapp-contact img {
+    /* .whatsapp-contact img {
         width: 13%;
         aspect-ratio: 11/12;
         object-fit: cover;
+    } */
+    .whatsapp-contact i {
+        font-size: 17px;
+        margin-bottom: 0.25rem;
     }
-
     #header-notification-contect-box {
         gap: 15%;
     }
@@ -5468,12 +5500,15 @@ a.view-details:hover {
         padding: 1.5% 5%;
     }
 
-    .whatsapp-contact img {
+    /* .whatsapp-contact img {
         width: 13%;
         aspect-ratio: 11/12;
         object-fit: cover;
+    } */
+    .whatsapp-contact i {
+        font-size: 17px;
+        margin-bottom: 0.25rem;
     }
-
     .whatsapp-contact {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -5906,12 +5941,15 @@ a.view-details:hover {
         top: 8.5rem;
     }
 
-    .whatsapp-contact img {
+    /* .whatsapp-contact img {
         width: 13%;
         aspect-ratio: 11/12;
         object-fit: cover;
+    } */
+    .whatsapp-contact i {
+        font-size: 17px;
+        margin-bottom: 0.25rem;
     }
-
     .whatsapp-contact {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -6038,11 +6076,14 @@ a.view-details:hover {
         margin-left: 26%;
     }
 
-    .whatsapp-contact img {
+    /* .whatsapp-contact img {
         width: 1.5rem;
         height: auto;
+    } */
+    .whatsapp-contact i {
+        font-size: 17px;
+        margin-bottom: 0.25rem;
     }
-
     .res-hide {
         display: none;
     }
@@ -6097,12 +6138,15 @@ a.view-details:hover {
         margin-left: 0;
     }
 
-    .whatsapp-contact img {
+    /* .whatsapp-contact img {
         width: 1rem;
         height: auto;
         margin-bottom: 0.25rem;
+    } */
+    .whatsapp-contact i {
+        font-size: 17px;
+        margin-bottom: 0.25rem;
     }
-
     .whatsapp-contact p {
         font-size: 0.8rem;
         color: white;
