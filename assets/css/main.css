@@ -7001,10 +7001,10 @@ a.view-details:hover {
     }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     html,
     body {
         overflow-x: hidden;
         width: 100%;
     }
-} */
+}
