@@ -968,17 +968,14 @@ h2.long a {
     border: 2px solid #ffffff;
     color: #ffffff;
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
-
 }
 
 #menu-icon {
-    background: url("../images/icons/menu.png") center center no-repeat;
-    background-size: cover;
-    width: 1.5rem;
-    height: 1.5rem;
     display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
 }
-
 #mobile-nav {
     background: #fff;
     width: 100%;
@@ -5322,6 +5319,7 @@ a.view-details:hover {
     #menu-icon {
         display: block;
         padding: 0 0.625rem;
+        margin-left: 26%;
     }
 
     .set-plan-button-mobile {
@@ -5350,9 +5348,6 @@ a.view-details:hover {
         transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
     }
 
-    #menu-icon {
-        margin-left: 26%;
-    }
 
     #mobile-nav {
         top: 3.5rem;
