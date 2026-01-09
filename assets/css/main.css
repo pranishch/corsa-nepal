@@ -1216,6 +1216,19 @@ textarea:focus {
 .dropdown:hover .dropdown-icon {
     transform: rotate(180deg);
 }
+.dropdown-icon {
+    display: inline-block;        
+    transition: transform 0.3s ease;
+    margin-left: 4px;
+}
+
+.dropdown-toggle:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown.open .dropdown-icon {
+    transform: rotate(180deg);
+}
 
 @media screen and (min-width: 768px) {
     .trip-modal-container {
