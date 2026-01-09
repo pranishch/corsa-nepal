@@ -74,34 +74,6 @@ function generateLeadFromPlanYourTrip() {
         request.open('GET', url, true);
         request.onreadystatechange = generateLeadFromPlanYourTripResponse;
         request.send(null);
-
-        // var request = new XMLHttpRequest();
-        // var url = 'https://www.corsanepaladventure.com/';
-        // url += "generate-Lead-From-Plan-Your-Trip.php?tripName=" + encodeURIComponent(nameValue) +
-        //        "&tripEmail=" + encodeURIComponent(emailValue) +
-        //        "&tripMobile=" + encodeURIComponent(mobileValue) +
-        //        "&tripMessage=" + encodeURIComponent(messageValue);
-
-        // request.open('GET', url, true);
-        // request.onreadystatechange = function() {
-        //     if (request.readyState == 4) {
-        //         if (request.status == 200) {
-        //             console.log("Response:", request.responseText);
-        //             document.getElementById("planTripMsg").innerHTML = "Thank you! We'll contact you soon.";
-        //             document.getElementById("planTripForm").reset();
-        //             setTimeout(function() {
-        //                 document.getElementById("planTripModal").style.display = "none";
-        //             }, 2000);
-        //         } else {
-        //             console.error("Error:", request.status, request.statusText);
-        //             document.getElementById("planTripMsg").innerHTML = "Error submitting form. Please try again.";
-        //         }
-        //     }
-        // };
-        // request.send(null);
-        
-        // // Prevent form submission
-        // return false;
     }
     return false;
 }
@@ -133,7 +105,6 @@ function generateLeadFromPlanYourTripResponse() {
         }
     }
 }
-
 
 // Helper function to mark field as invalid
 function markFieldInvalid(field, placeholderText) {
