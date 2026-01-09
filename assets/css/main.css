@@ -107,7 +107,7 @@ h2.long a {
 .hot-selling-packages-title {
     width: 100%;
     height: auto;
-    margin-top: 3%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1386,6 +1386,7 @@ textarea:focus {
 /*============================= banner.css ================================*/
 /*======================== banner.css ======================*/
 .home-banner-section {
+    position: relative;
     width: 100%;
     height: 40rem;
     background-image: url("../images/banner/home-banner.jpg");
@@ -1395,10 +1396,13 @@ textarea:focus {
 }
 
 .banner-content-section {
-    width: 56rem;
-    height: auto;
-    padding-top: 13%;
-    padding-left: 5%;
+    position: absolute;   /* change from relative to absolute */
+    top: 50%;             /* vertical center */
+    left: 5%;             /* distance from left edge */
+    transform: translateY(-50%); /* perfect vertical centering */
+    max-width: 56rem;     /* maximum width */
+    width: 90%;           /* responsive width */
+    z-index: 2;   
 }
 
 .banner-h1 {
@@ -1480,6 +1484,7 @@ textarea:focus {
 }
 
 .center-propagation {
+    position: absolute; 
     width: 100%;
     height: 6.25rem;
     justify-content: center;
