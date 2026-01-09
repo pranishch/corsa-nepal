@@ -1430,7 +1430,10 @@ textarea:focus {
     flex-direction: row;
     align-items: center;
 }
-
+.location-banner-text i {
+    color: #36f57c;
+    font-size: 23px;
+}
 .location-banner-text p {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -3373,6 +3376,33 @@ a img {
     flex-direction: row;
     gap: .875rem;
 }
+/* Style the icon itself */
+.media-icons i {
+    font-size: 40px; /* size of icon, e.g., 2rem = 32px */
+    transition: color 0.3s, transform 0.3s; /* smooth hover effects */
+}
+.media-icons .fa-square-facebook {
+    color: #3b5998;
+}
+.media-icons .fa-square-instagram {
+    color: #d62976;
+}
+.media-icons .fa-square-youtube {
+    color: #d90000;
+}
+.media-icons .fa-tiktok {
+    background-color: #000;     /* black square background */
+    color: #fff;             /* TikTok brand color */
+    border-radius: 8px;
+    width: 36px;                /* fixed square width */
+    height: 36px;               /* fixed square height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;            /* icon size inside the square */
+    transition: all 0.3s ease;
+    margin-top: 2px;
+}
 
 /* Footer Links */
 .footer-links {
@@ -3419,7 +3449,12 @@ h4.footer-heading {
 .footer-links-blocks ul li {
     margin-bottom: .6rem;
 }
-
+.footer-links-blocks ul li a i {
+    font-size: 18px;
+    color: #f97316; 
+    margin-right: 17px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 .footer-links-blocks a {
     text-decoration: none;
     color: #5B5F63;
